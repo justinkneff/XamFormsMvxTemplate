@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamForms.MvxTemplate.Core.Views.MainPage">
+             x:Class="XamForms.MvxTemplate.Core.Views.MainPage"
+             xmlns:res="clr-namespace:XamForms.MvxTemplate.Core.Resources;assembly=XamForms.MvxTemplate.Core">
   <Grid>
-    <Label Text="{Binding Title}" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Text="{res:Translate MainPageTitle}" VerticalOptions="Center" HorizontalOptions="Center" />
   </Grid>
 </ContentPage>
