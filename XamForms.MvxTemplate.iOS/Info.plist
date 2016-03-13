@@ -13,6 +13,12 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
+  <key>CFBundleLocalizations</key>
+  <array>
+    <string>de</string>
+  </array>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
 	<string></string>
 	<key>UIDeviceFamily</key>
 	<array>

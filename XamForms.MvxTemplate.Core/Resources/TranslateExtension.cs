@@ -2,12 +2,20 @@
 using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamForms.MvxTemplate.Core.Services;
 
 namespace XamForms.MvxTemplate.Core.Resources
 {
     [ContentProperty("Text")]
     public class TranslateExtension : IMarkupExtension
     {
+        private readonly CultureInfo _cultureInfo;
+
+        public TranslateExtension()
+        {
+            _cultureInfo = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
+        }
+
         public string Text { get; set; }
 
         public object ProvideValue(IServiceProvider serviceProvider)
@@ -16,8 +24,8 @@ namespace XamForms.MvxTemplate.Core.Resources
             {
                 return null;
             }
-
-            var translation = App.ResM.GetString(Text, AppResources.Culture);
+            
+            var translation = AppResources.ResourceManager.GetString(Text, _cultureInfo);
 
 #if DEBUG
             if (translation == null)
