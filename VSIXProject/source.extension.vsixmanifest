@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="VSIXProject.Cristian Chereches.2e7a3a36-865f-46fb-b859-187c3c6fb9b1" Version="1.0" Language="en-US" Publisher="Cristian Chereches" />
+    <DisplayName>Xamarin Forms with MvvmCross Solution Template</DisplayName>
+    <Description xml:space="preserve">Solution template containing the needed Core, iOS, Android and UWP projects. For easier testing purposes, the solution also includes a UnitTest project and a UITest project.</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\XamForms.MvxTemplate.Solution.zip" />
+  </Assets>
+</PackageManifest>

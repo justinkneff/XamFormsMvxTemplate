@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.Core", "XamForms.MvxTemplate.Core\XamForms.MvxTemplate.Core.csproj", "{74043E51-EF7B-4CE1-AF3F-7612ED1D05B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.Core", "XamForms.MvxTemplate\XamForms.MvxTemplate.Core\XamForms.MvxTemplate.Core.csproj", "{74043E51-EF7B-4CE1-AF3F-7612ED1D05B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.iOS", "XamForms.MvxTemplate.iOS\XamForms.MvxTemplate.iOS.csproj", "{88A375C3-8567-47B7-A040-CF48B7049986}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.iOS", "XamForms.MvxTemplate\XamForms.MvxTemplate.iOS\XamForms.MvxTemplate.iOS.csproj", "{88A375C3-8567-47B7-A040-CF48B7049986}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.Droid", "XamForms.MvxTemplate.Droid\XamForms.MvxTemplate.Droid.csproj", "{48D8DCC6-6342-4A62-AB87-B26CBFB3FEB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.Droid", "XamForms.MvxTemplate\XamForms.MvxTemplate.Droid\XamForms.MvxTemplate.Droid.csproj", "{48D8DCC6-6342-4A62-AB87-B26CBFB3FEB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.UWP", "XamForms.MvxTemplate.UWP\XamForms.MvxTemplate.UWP.csproj", "{DB20308E-8E4C-4ED4-85AF-66DA6354F20D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.UWP", "XamForms.MvxTemplate\XamForms.MvxTemplate.UWP\XamForms.MvxTemplate.UWP.csproj", "{DB20308E-8E4C-4ED4-85AF-66DA6354F20D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.W81", "XamForms.MvxTemplate.W81\XamForms.MvxTemplate.W81.csproj", "{F7219208-654B-4536-9847-86DFD4A45175}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.W81", "XamForms.MvxTemplate\XamForms.MvxTemplate.W81\XamForms.MvxTemplate.W81.csproj", "{F7219208-654B-4536-9847-86DFD4A45175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.UnitTests", "XamForms.MvxTemplate.UnitTests\XamForms.MvxTemplate.UnitTests.csproj", "{63A3EE7F-E989-4F5B-AF2F-BF2D79E46D37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.UnitTests", "XamForms.MvxTemplate\XamForms.MvxTemplate.UnitTests\XamForms.MvxTemplate.UnitTests.csproj", "{63A3EE7F-E989-4F5B-AF2F-BF2D79E46D37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{0BC2D6F3-C782-41F4-A2F3-DBDF5D5EDD01}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7ED19370-31F9-4BF4-970C-BA1824D36C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.UITests", "XamForms.MvxTemplate.UITests\XamForms.MvxTemplate.UITests.csproj", "{EB466A08-7DEE-401D-96A0-BC1E35308500}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.MvxTemplate.UITests", "XamForms.MvxTemplate\XamForms.MvxTemplate.UITests\XamForms.MvxTemplate.UITests.csproj", "{EB466A08-7DEE-401D-96A0-BC1E35308500}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
