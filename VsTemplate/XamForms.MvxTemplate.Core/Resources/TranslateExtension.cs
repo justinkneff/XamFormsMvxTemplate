@@ -13,7 +13,10 @@ namespace $safeprojectname$.Resources
 
         public TranslateExtension()
         {
-            _cultureInfo = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
+            if (Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.iOS)
+            {
+                _cultureInfo = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
+            }
         }
 
         public string Text { get; set; }
@@ -25,12 +28,12 @@ namespace $safeprojectname$.Resources
                 return null;
             }
             
-            var translation = AppResources.ResourceManager.GetString(Text, _cultureInfo);
+			var translation = AppResources.ResourceManager.GetString(Text, _cultureInfo);
 
 #if DEBUG
             if (translation == null)
             {
-                throw new ArgumentException(string.Format("Key {0} was not found for culture {1}.", Text, CultureInfo.CurrentCulture));
+                throw new ArgumentException(string.Format("Key {0} was not found for culture {1}.", Text, _cultureInfo));
             }
 #endif
             return translation;

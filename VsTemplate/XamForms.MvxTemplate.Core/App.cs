@@ -1,12 +1,9 @@
 ﻿using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.IoC;
-using System;
-using System.Globalization;
-using System.Resources;
-using Xamarin.Forms;
-using $safeprojectname$.Resources;
-using $safeprojectname$.Services;
 using $safeprojectname$.ViewModels;
+using Xamarin.Forms;
+using $safeprojectname$.Services;
+using $safeprojectname$.Resources;
 
 namespace $safeprojectname$
 {
@@ -18,11 +15,11 @@ namespace $safeprojectname$
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-
-            if (Device.OS != TargetPlatform.WinPhone && Device.OS != TargetPlatform.Windows)
-            {
-                AppResources.Culture = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
-            }
+            
+			if (Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.iOS)
+			{
+				AppResources.Culture = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
+			}
 
             RegisterAppStart<MainViewModel>();
         }
