@@ -38,11 +38,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Resources\AppResources.en-EN.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AppResources.en-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="Resources\AppResources.en-US.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,10 +100,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Resources\AppResources.en-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>AppResources.en-EN.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Resources\AppResources.en-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.en-US.Designer.cs</LastGenOutput>
