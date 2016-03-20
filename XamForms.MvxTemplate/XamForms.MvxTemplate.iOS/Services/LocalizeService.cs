@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using System;
+using System.Globalization;
 using Xamarin.Forms;
 using XamForms.MvxTemplate.iOS.Services;
 
@@ -26,16 +27,16 @@ namespace XamForms.MvxTemplate.iOS.Services
                 netLanguage = pref.Replace("_", "-");
                 Console.WriteLine("preferred language:" + netLanguage);
             }
-            System.Globalization.CultureInfo ci = null;
+            CultureInfo ci = null;
             try
             {
-                ci = new System.Globalization.CultureInfo(netLanguage);
+                ci = new CultureInfo(netLanguage);
             }
             catch
             {
                 // iOS locale not valid .NET culture (eg. "en-ES" : English in Spain)
                 // fallback to first characters, in this case "en"
-                ci = new System.Globalization.CultureInfo(prefLanguageOnly);
+                ci = new CultureInfo(prefLanguageOnly);
             }
             return ci;
         }
