@@ -2,7 +2,7 @@
 
 namespace XamForms.MvxTemplate.Core.ViewModels
 {
-    public class MainViewModel : MvxViewModel
+    public class MainViewModel : BaseViewModel
     {
     }
 }
