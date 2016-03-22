@@ -1,10 +1,7 @@
 ﻿using Foundation;
 using System;
 using System.Globalization;
-using Xamarin.Forms;
-using XamForms.MvxTemplate.iOS.Services;
 
-[assembly: Dependency(typeof(LocalizeService))]
 namespace XamForms.MvxTemplate.iOS.Services
 {
     public class LocalizeService : Core.Services.ILocalizeService

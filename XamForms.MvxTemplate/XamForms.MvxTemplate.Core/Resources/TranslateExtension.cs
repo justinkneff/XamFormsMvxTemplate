@@ -1,8 +1,8 @@
-﻿using System;
+﻿using MvvmCross.Platform;
+using System;
 using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using XamForms.MvxTemplate.Core.Services;
 
 namespace XamForms.MvxTemplate.Core.Resources
 {
@@ -15,7 +15,7 @@ namespace XamForms.MvxTemplate.Core.Resources
         {
             if (Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.iOS)
             {
-                _cultureInfo = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
+                _cultureInfo = Mvx.Resolve<Services.ILocalizeService>().GetCurrentCultureInfo();
             }
         }
 

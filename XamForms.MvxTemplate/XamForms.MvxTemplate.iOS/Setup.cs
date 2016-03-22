@@ -5,6 +5,7 @@ using UIKit;
 using Xamarin.Forms;
 using MvvmCross.Forms.Presenter.iOS;
 using MvvmCross.Forms.Presenter.Core;
+using MvvmCross.Platform;
 
 namespace XamForms.MvxTemplate.iOS
 {
@@ -13,6 +14,13 @@ namespace XamForms.MvxTemplate.iOS
         public Setup(MvxApplicationDelegate applicationDelegate, UIWindow window)
             : base(applicationDelegate, window)
         {
+        }
+
+        protected override void InitializeFirstChance()
+        {
+            base.InitializeFirstChance();
+
+            Mvx.RegisterSingleton<Core.Services.ILocalizeService>(new Services.LocalizeService());
         }
 
         protected override IMvxApplication CreateApp()

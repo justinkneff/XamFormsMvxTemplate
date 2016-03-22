@@ -1,10 +1,6 @@
-using System;
 using System.Diagnostics;
 using System.Globalization;
-using Xamarin.Forms;
-using XamForms.MvxTemplate.Droid.Services;
 
-[assembly: Dependency(typeof(LocalizeService))]
 namespace XamForms.MvxTemplate.Droid.Services
 {
     public class LocalizeService : Core.Services.ILocalizeService
@@ -18,7 +14,7 @@ namespace XamForms.MvxTemplate.Droid.Services
             }
             catch (CultureNotFoundException e)
             {
-                Debug.Write(e.Message);
+                Debug.WriteLine(e.Message);
             }
 
             return new CultureInfo("en");
