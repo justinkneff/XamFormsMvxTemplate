@@ -2,7 +2,7 @@
 
 namespace $safeprojectname$.ViewModels
 {
-    public class MainViewModel : MvxViewModel
+    public class MainViewModel : BaseViewModel
     {
     }
 }

@@ -1,9 +1,7 @@
 ﻿using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.IoC;
-using $safeprojectname$.ViewModels;
 using Xamarin.Forms;
-using $safeprojectname$.Services;
-using $safeprojectname$.Resources;
+using MvvmCross.Platform;
 
 namespace $safeprojectname$
 {
@@ -18,10 +16,10 @@ namespace $safeprojectname$
             
 			if (Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.iOS)
 			{
-				AppResources.Culture = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
+				Resources.AppResources.Culture = Mvx.Resolve<Services.ILocalizeService>().GetCurrentCultureInfo();
 			}
 
-            RegisterAppStart<MainViewModel>();
+            RegisterAppStart<ViewModels.MainViewModel>();
         }
     }
 }

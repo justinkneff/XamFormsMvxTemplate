@@ -15,6 +15,12 @@ namespace $safeprojectname$
         {
         }
 
+        protected override void InitializeFirstChance()
+        {
+            base.InitializeFirstChance();
+
+            Mvx.RegisterSingleton<Core.Services.ILocalizeService>(new Services.LocalizeService());
+        }
         protected override IMvxApplication CreateApp()
         {
             return new Core.App();

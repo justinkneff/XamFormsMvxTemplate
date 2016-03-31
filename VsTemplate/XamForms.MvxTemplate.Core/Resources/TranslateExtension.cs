@@ -1,8 +1,8 @@
-﻿using System;
+﻿using MvvmCross.Platform;
+using System;
 using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using $safeprojectname$.Services;
 
 namespace $safeprojectname$.Resources
 {
@@ -15,7 +15,7 @@ namespace $safeprojectname$.Resources
         {
             if (Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.iOS)
             {
-                _cultureInfo = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
+                _cultureInfo = Mvx.Resolve<Services.ILocalizeService>().GetCurrentCultureInfo();
             }
         }
 
