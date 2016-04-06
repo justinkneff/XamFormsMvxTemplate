@@ -17,6 +17,9 @@
   <TemplateContent>
     <Project TargetFileName="XamForms.MvxTemplate.iOS.csproj" File="XamForms.MvxTemplate.iOS.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="AppDelegate.cs">AppDelegate.cs</ProjectItem>
+      <Folder Name="Bootstrap" TargetFolderName="Bootstrap">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SqlitePluginBootstrap.cs">SqlitePluginBootstrap.cs</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Entitlements.plist">Entitlements.plist</ProjectItem>
       <ProjectItem ReplaceParameters="false" TargetFileName="GettingStarted.Xamarin">GettingStarted.Xamarin</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Info.plist">Info.plist</ProjectItem>

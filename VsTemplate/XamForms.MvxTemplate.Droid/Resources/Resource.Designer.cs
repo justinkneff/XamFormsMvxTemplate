@@ -47,6 +47,10 @@ namespace $safeprojectname$
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::$safeprojectname$.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::$safeprojectname$.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::$safeprojectname$.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.ApplicationName = global::$safeprojectname$.Resource.String.ApplicationName;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.Hello = global::$safeprojectname$.Resource.String.Hello;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::$safeprojectname$.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::$safeprojectname$.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::$safeprojectname$.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2507,8 +2511,11 @@ namespace $safeprojectname$
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f05001f
+			public const int ApplicationName = 2131034143;
+			
 			// aapt resource value: 0x7f05001e
-			public const int ApplicationName = 2131034142;
+			public const int Hello = 2131034142;
 			
 			// aapt resource value: 0x7f05000b
 			public const int abc_action_bar_home_description = 2131034123;

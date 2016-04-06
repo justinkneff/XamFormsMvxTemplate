@@ -19,6 +19,9 @@
       <Folder Name="Assets" TargetFolderName="Assets">
         <ProjectItem ReplaceParameters="true" TargetFileName="AboutAssets.txt">AboutAssets.txt</ProjectItem>
       </Folder>
+      <Folder Name="Bootstrap" TargetFolderName="Bootstrap">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SqlitePluginBootstrap.cs">SqlitePluginBootstrap.cs</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="GettingStarted.Xamarin">GettingStarted.Xamarin</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Linker.cs">Linker.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="MvxFormsApplicationActivity.cs">MvxFormsApplicationActivity.cs</ProjectItem>

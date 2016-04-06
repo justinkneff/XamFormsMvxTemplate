@@ -4,6 +4,7 @@
     "MvvmCross": "4.1.0",
     "MvvmCross.Core": "4.1.0",
     "MvvmCross.Forms.Presenter": "4.1.0",
+    "MvvmCross.Plugin.SQLitePCL": "4.1.0",
     "Xamarin.Forms": "2.1.0.6529"
   },
   "frameworks": {

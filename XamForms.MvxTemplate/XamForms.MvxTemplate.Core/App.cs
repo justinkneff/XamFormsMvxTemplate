@@ -13,7 +13,12 @@ namespace XamForms.MvxTemplate.Core
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-            
+
+            CreatableTypes().
+                EndingWith("Repository")
+                .AsTypes()
+                .RegisterAsLazySingleton();
+                
 			if (Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.iOS)
 			{
 				Resources.AppResources.Culture = Mvx.Resolve<Services.ILocalizeService>().GetCurrentCultureInfo();
