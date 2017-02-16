@@ -15,7 +15,7 @@ After installing the extension, when creating a new project in Visual Studio, yo
 * A Portable Class Library that will contain the Xamarin.Forms UI files, the View Models and a basic abstract repository class to work with the SQLite database.
 * An Android project
 * An iOS project
-* An Universal Windwos Platform project
+* An Universal Windows Platform project
 * An UITest project
 * An UnitTest project
 
